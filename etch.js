@@ -10,7 +10,7 @@ body.style.alignItems = 'center'
 const container = document.getElementById("grid_container")
 container.style.width = containerSize + "px"
 container.style.height = containerSize + "px"
-container.style.border = 'solid 1px'
+container.style.border = 'solid'
 container.style.display = 'flex'
 container.style.flexWrap = 'wrap'
 
@@ -30,11 +30,11 @@ for(let i = 0; i < gridsizeNum; i++){
         row.appendChild(box)
     }
     container.appendChild(row)
+    
 }
 
 let boxes = document.getElementsByClassName("box")
 for (i = 0; i < boxes.length; i++){
-    boxes[i].style.border = "solid black 0.5px"
     boxes[i].style.width = squareSize + "px"
     boxes[i].style.height = squareSize + "px"
 }
