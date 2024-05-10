@@ -1,3 +1,15 @@
 body { 
     text-align: center;
 }
+
+.big_container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#change_grid{
+    display: flex;
+    justify-content: space-between;
+}
+
