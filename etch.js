@@ -58,10 +58,20 @@ grid_maker(gridsizeNum)
 let changeSize = document.getElementById("changeSize")
 
 changeSize.addEventListener("click", ()=>{
+    //make sure it only takes a number (strip anything that isn't a num)
+    //make sure they cant go over 100
     let gridNum = prompt("Enter the size of a grid")
+    if (gridNum <= 100 && !isNaN(gridNum)) {
+        deleteBoard()
+        grid_maker(gridNum)
+    }
+    else if (gridNum > 100){
+        window.alert("Grid size cannot exceed 100!")
+    }
+    else if (isNaN(gridNum)){
+        window.alert("Grid size must be a number")
+    }
     
-    deleteBoard()
-    grid_maker(gridNum)
     
 })
 

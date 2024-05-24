@@ -1,11 +1,16 @@
 body { 
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .big_container{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-top: 50px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #change_grid{
@@ -13,3 +18,19 @@ body {
     justify-content: space-between;
 }
 
+#changeSize, #resetBoard{
+    border: none;
+    width: 105px;
+    height: 25px;   
+    background-color: #67ee9f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#changeSize:hover, #resetBoard:hover{
+    background-color: #d3dae2;
+}
+#header{
+    font-size: 50px;
+    color: #67ee9f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
